@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Create Account</title>
     <link rel="stylesheet" href="style.css">
@@ -9,20 +10,49 @@
 
     <div class="container">
 
-        <h1>Create Account</h1>
+        <h1>Create Account 🎁</h1>
 
-        <form>
+        <p>Use your email or phone number.</p>
+
+        <form action="register.php" method="POST">
 
             <label>Name</label>
-            <input type="text" placeholder="Enter your name">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
 
             <label>Email</label>
-            <input type="email" placeholder="Enter your email">
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+            >
+
+            <label>Phone Number</label>
+
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your phone number"
+            >
 
             <label>Password</label>
-            <input type="password" placeholder="Enter your password">
 
-            <button type="submit">Create Account</button>
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit">
+                Create Account
+            </button>
 
         </form>
 
@@ -31,7 +61,12 @@
             <a href="login.html">Login</a>
         </p>
 
+        <p>
+            <a href="index.html">← Back to Home</a>
+        </p>
+
     </div>
 
 </body>
+
 </html>
